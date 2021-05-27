@@ -33,17 +33,25 @@
                     app:navigationIcon="@android:drawable/ic_menu_agenda" />
 
                 <TextView
-                    android:id="@+id/textView5"
+                    android:id="@+id/screen"
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
+                    android:layout_height="55dp"
                     android:background="@color/white"
                     android:fontFamily="serif-monospace"
                     android:gravity="center"
-                    android:text="1 + 1 = 2"
+                    android:paddingRight="20dp"
                     android:textAlignment="textEnd"
                     android:textColor="@color/material_on_background_emphasis_high_type"
-                    android:textSize="40sp"
+                    android:textSize="35sp"
                     android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/screen2"
+                    android:layout_width="match_parent"
+                    android:layout_height="72dp"
+                    android:gravity="center|end"
+                    android:paddingRight="30dp"
+                    android:textSize="40sp" />
 
             </LinearLayout>
 
@@ -65,7 +73,7 @@
                         android:orientation="horizontal">
 
                         <Button
-                            android:id="@+id/button"
+                            android:id="@+id/btn_delete"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:layout_weight="1"
@@ -73,52 +81,7 @@
                             android:insetTop="1dp"
                             android:insetRight="1dp"
                             android:insetBottom="0dp"
-                            android:text="Sin"
-                            android:textSize="14sp"
-                            android:textStyle="bold"
-                            app:backgroundTint="@color/teal_700"
-                            app:elevation="0dp" />
-
-                        <Button
-                            android:id="@+id/button2"
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:layout_weight="1"
-                            android:insetLeft="1dp"
-                            android:insetTop="1dp"
-                            android:insetRight="1dp"
-                            android:insetBottom="0dp"
-                            android:text="COS"
-                            android:textSize="14sp"
-                            android:textStyle="bold"
-                            app:backgroundTint="@color/teal_700"
-                            app:elevation="0dp" />
-
-                        <Button
-                            android:id="@+id/button3"
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:layout_weight="1"
-                            android:insetLeft="1dp"
-                            android:insetTop="1dp"
-                            android:insetRight="1dp"
-                            android:insetBottom="0dp"
-                            android:text="()"
-                            android:textSize="30sp"
-                            android:textStyle="bold"
-                            app:backgroundTint="@color/teal_700"
-                            app:elevation="0dp" />
-
-                        <Button
-                            android:id="@+id/button4"
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:layout_weight="1"
-                            android:insetLeft="1dp"
-                            android:insetTop="1dp"
-                            android:insetRight="1dp"
-                            android:insetBottom="0dp"
-                            android:text="Back"
+                            android:text="DELETE"
                             android:textSize="14sp"
                             android:textStyle="bold"
                             app:backgroundTint="@color/teal_700"
@@ -139,7 +102,7 @@
                         android:orientation="horizontal">
 
                         <Button
-                            android:id="@+id/button8"
+                            android:id="@+id/btn_clear"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:layout_weight="1"
@@ -154,7 +117,7 @@
                             app:elevation="0dp" />
 
                         <Button
-                            android:id="@+id/button9"
+                            android:id="@+id/btn_mod"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:layout_weight="1"
@@ -169,22 +132,7 @@
                             app:elevation="0dp" />
 
                         <Button
-                            android:id="@+id/button11"
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:layout_weight="1"
-                            android:insetLeft="1dp"
-                            android:insetTop="1dp"
-                            android:insetRight="1dp"
-                            android:insetBottom="0dp"
-                            android:text="+/-"
-                            android:textSize="30sp"
-                            android:textStyle="bold"
-                            app:backgroundTint="@color/teal_700"
-                            app:elevation="0dp" />
-
-                        <Button
-                            android:id="@+id/button12"
+                            android:id="@+id/btn_div"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:layout_weight="1"
@@ -212,8 +160,8 @@
                         android:orientation="horizontal">
 
                         <Button
-                            android:id="@+id/button13"
-                            android:layout_width="match_parent"
+                            android:id="@+id/btn_7"
+                            android:layout_width="300dp"
                             android:layout_height="match_parent"
                             android:layout_weight="1"
                             android:ellipsize="none"
@@ -228,8 +176,8 @@
                             app:elevation="0dp" />
 
                         <Button
-                            android:id="@+id/button14"
-                            android:layout_width="match_parent"
+                            android:id="@+id/btn_8"
+                            android:layout_width="300dp"
                             android:layout_height="match_parent"
                             android:layout_weight="1"
                             android:ellipsize="none"
@@ -244,8 +192,8 @@
                             app:elevation="0dp" />
 
                         <Button
-                            android:id="@+id/button15"
-                            android:layout_width="match_parent"
+                            android:id="@+id/btn_9"
+                            android:layout_width="300dp"
                             android:layout_height="match_parent"
                             android:layout_weight="1"
                             android:ellipsize="none"
@@ -260,8 +208,8 @@
                             app:elevation="0dp" />
 
                         <Button
-                            android:id="@+id/button16"
-                            android:layout_width="match_parent"
+                            android:id="@+id/btn_mult"
+                            android:layout_width="344dp"
                             android:layout_height="match_parent"
                             android:layout_weight="1"
                             android:ellipsize="none"
@@ -289,8 +237,8 @@
                         android:orientation="horizontal">
 
                         <Button
-                            android:id="@+id/button17"
-                            android:layout_width="match_parent"
+                            android:id="@+id/btn_4"
+                            android:layout_width="300dp"
                             android:layout_height="match_parent"
                             android:layout_weight="1"
                             android:insetLeft="1dp"
@@ -304,8 +252,8 @@
                             app:elevation="0dp" />
 
                         <Button
-                            android:id="@+id/button18"
-                            android:layout_width="match_parent"
+                            android:id="@+id/btn_5"
+                            android:layout_width="300dp"
                             android:layout_height="match_parent"
                             android:layout_weight="1"
                             android:insetLeft="1dp"
@@ -319,8 +267,8 @@
                             app:elevation="0dp" />
 
                         <Button
-                            android:id="@+id/button19"
-                            android:layout_width="match_parent"
+                            android:id="@+id/btn_6"
+                            android:layout_width="300dp"
                             android:layout_height="match_parent"
                             android:layout_weight="1"
                             android:insetLeft="1dp"
@@ -334,8 +282,8 @@
                             app:elevation="0dp" />
 
                         <Button
-                            android:id="@+id/button20"
-                            android:layout_width="match_parent"
+                            android:id="@+id/btn_sous"
+                            android:layout_width="344dp"
                             android:layout_height="match_parent"
                             android:layout_weight="1"
                             android:insetLeft="1dp"
@@ -363,8 +311,8 @@
                         android:orientation="horizontal">
 
                         <Button
-                            android:id="@+id/button21"
-                            android:layout_width="match_parent"
+                            android:id="@+id/btn_1"
+                            android:layout_width="300dp"
                             android:layout_height="match_parent"
                             android:layout_weight="1"
                             android:insetLeft="1dp"
@@ -378,8 +326,8 @@
                             app:elevation="0dp" />
 
                         <Button
-                            android:id="@+id/button23"
-                            android:layout_width="match_parent"
+                            android:id="@+id/btn_2"
+                            android:layout_width="300dp"
                             android:layout_height="match_parent"
                             android:layout_weight="1"
                             android:insetLeft="1dp"
@@ -393,8 +341,8 @@
                             app:elevation="0dp" />
 
                         <Button
-                            android:id="@+id/button24"
-                            android:layout_width="match_parent"
+                            android:id="@+id/btn_3"
+                            android:layout_width="300dp"
                             android:layout_height="match_parent"
                             android:layout_weight="1"
                             android:insetLeft="1dp"
@@ -408,8 +356,8 @@
                             app:elevation="0dp" />
 
                         <Button
-                            android:id="@+id/button22"
-                            android:layout_width="match_parent"
+                            android:id="@+id/btn_add"
+                            android:layout_width="344dp"
                             android:layout_height="match_parent"
                             android:layout_weight="1"
                             android:insetLeft="1dp"
@@ -437,8 +385,8 @@
                         android:orientation="horizontal">
 
                         <Button
-                            android:id="@+id/button25"
-                            android:layout_width="match_parent"
+                            android:id="@+id/btn_0"
+                            android:layout_width="300dp"
                             android:layout_height="match_parent"
                             android:layout_weight="1"
                             android:insetLeft="1dp"
@@ -452,8 +400,8 @@
                             app:elevation="0dp" />
 
                         <Button
-                            android:id="@+id/button27"
-                            android:layout_width="match_parent"
+                            android:id="@+id/btn_00"
+                            android:layout_width="300dp"
                             android:layout_height="match_parent"
                             android:layout_weight="1"
                             android:insetLeft="1dp"
@@ -467,8 +415,8 @@
                             app:elevation="0dp" />
 
                         <Button
-                            android:id="@+id/button26"
-                            android:layout_width="match_parent"
+                            android:id="@+id/btn_dot"
+                            android:layout_width="300dp"
                             android:layout_height="match_parent"
                             android:layout_weight="1"
                             android:insetLeft="1dp"
@@ -482,8 +430,8 @@
                             app:elevation="0dp" />
 
                         <Button
-                            android:id="@+id/button28"
-                            android:layout_width="match_parent"
+                            android:id="@+id/btn_equal"
+                            android:layout_width="344dp"
                             android:layout_height="match_parent"
                             android:layout_weight="1"
                             android:insetLeft="1dp"
